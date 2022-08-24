@@ -1,6 +1,6 @@
 import requests
 
-rawChinaASN = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ABC/ABC.yaml").text
+rawABC = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ABC/ABC.yaml").text
 
 result = rawABC.split("\n")
 
