@@ -63,7 +63,7 @@ raw优酷 = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rul
 raw知乎 = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Zhihu/Zhihu.yaml").text
 
 result = ['payload:']
-for rawresult in [result = raw115, raw12306, raw360, raw58同城, rawAcFun, raw支付宝, raw阿里巴巴, raw百度, raw百度贴吧, rawBiliBili, rawCCTV, rawCSDN, raw城通网盘, rawChina, rawChinaIPs, rawChinaIPsBGP, raw国内网站合集, rawChinaMedia, raw中国移动, raw中国新闻网, raw中国电信, raw中国联通, raw当当, raw钉钉, raw豆瓣, raw抖音, raw斗鱼, raw飞猪, raw凤凰网, raw高德, rawGovernmentCN, raw盒马, raw虎牙, raw华为, raw虎扑, raw爱奇艺, raw坚果云, raw简书, raw京东, raw快手, raw酷狗酷我, rawOPPO, rawOnePlus, raw拼多多, raw平安, raw新浪, raw搜狐, rawSteamCN, raw苏宁, raw腾讯, raw腾讯视频, raw中国银联, rawVivo, raw微信, raw微博, raw闲鱼, raw小红书, raw小米, raw迅雷, raw优酷, raw知乎]:
+for rawresult in [raw115, raw12306, raw360, raw58同城, rawAcFun, raw支付宝, raw阿里巴巴, raw百度, raw百度贴吧, rawBiliBili, rawCCTV, rawCSDN, raw城通网盘, rawChina, rawChinaIPs, rawChinaIPsBGP, raw国内网站合集, rawChinaMedia, raw中国移动, raw中国新闻网, raw中国电信, raw中国联通, raw当当, raw钉钉, raw豆瓣, raw抖音, raw斗鱼, raw飞猪, raw凤凰网, raw高德, rawGovernmentCN, raw盒马, raw虎牙, raw华为, raw虎扑, raw爱奇艺, raw坚果云, raw简书, raw京东, raw快手, raw酷狗酷我, rawOPPO, rawOnePlus, raw拼多多, raw平安, raw新浪, raw搜狐, rawSteamCN, raw苏宁, raw腾讯, raw腾讯视频, raw中国银联, rawVivo, raw微信, raw微博, raw闲鱼, raw小红书, raw小米, raw迅雷, raw优酷, raw知乎]:
     result.extend([item.rstrip() for item in rawresult.split('\n') if not (item.startswith('#') or item.startswith('payload:'))])
 result_text = '\n'.join(result)
 
