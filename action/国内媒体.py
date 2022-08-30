@@ -67,5 +67,5 @@ for rawresult in [raw115, raw12306, raw360, raw58同城, rawAcFun, raw支付宝,
     result.extend([item.rstrip() for item in rawresult.split('\n') if not (item.startswith('#') or item.startswith('payload:'))])
 result_text = '\n'.join(result)
 
-with open("./国内媒体.yaml", "w") as f:
+with open("./ChineseMedia.yaml", "w") as f:
     f.write("\n".join(result))
