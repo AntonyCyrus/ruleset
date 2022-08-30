@@ -616,11 +616,9 @@ payload:
   - DOMAIN-SUFFIX,wwwipodlounge.com
   - DOMAIN-SUFFIX,wwwmacbookair.com
   - DOMAIN-SUFFIX,apple.comscoreresearch.com
-  - DOMAIN-SUFFIX,apple.news
   - DOMAIN-SUFFIX,appleenews.com
   - DOMAIN-SUFFIX,applemusic.berlin
   - DOMAIN-SUFFIX,applemusic.co
-  - DOMAIN-SUFFIX,applemusic.com
   - DOMAIN-SUFFIX,applemusic.com.au
   - DOMAIN-SUFFIX,applemusic.hamburg
   - DOMAIN-SUFFIX,applemusic.wang
@@ -653,6 +651,8 @@ payload:
   - DOMAIN-SUFFIX,iphoto.wang
   - DOMAIN-SUFFIX,musickit.net
   - DOMAIN-SUFFIX,wwwapplemusic.com
+  - DOMAIN-SUFFIX,applemusic.com
+  - DOMAIN-SUFFIX,apple.news
   - DOMAIN-SUFFIX,apple-dns.net
   - DOMAIN-SUFFIX,appsto.re
   - DOMAIN-SUFFIX,digicert.com
@@ -2303,7 +2303,6 @@ payload:
   - DOMAIN-SUFFIX,gv.com
   - DOMAIN-SUFFIX,gvt0.com
   - DOMAIN-SUFFIX,gvt1-cn.com
-  - DOMAIN-SUFFIX,gvt1.com
   - DOMAIN-SUFFIX,gvt2-cn.com
   - DOMAIN-SUFFIX,gvt3.com
   - DOMAIN-SUFFIX,gvt5.com
@@ -2383,6 +2382,7 @@ payload:
   - DOMAIN-SUFFIX,quiksee.com
   - DOMAIN-SUFFIX,recaptcha.net
   - DOMAIN-SUFFIX,redhotlabs.com
+  - DOMAIN-SUFFIX,redirector.gvt1.com
   - DOMAIN-SUFFIX,registry.google
   - DOMAIN-SUFFIX,revolv.com
   - DOMAIN-SUFFIX,ridepenguin.com
@@ -3290,7 +3290,8 @@ payload:
   - DOMAIN-SUFFIX,sentry.prod.mozaws.net
   - DOMAIN-SUFFIX,thunderbird.net
 
-  - DOMAIN,api.fast.com
+  - DOMAIN,e13252.dscg.akamaiedge.net
+  - DOMAIN,h-netflix.online-metrix.net
   - DOMAIN,netflix.com.edgesuite.net
   - DOMAIN-SUFFIX,fast.com
   - DOMAIN-SUFFIX,flxvpn.net
@@ -4722,6 +4723,9 @@ payload:
   - DOMAIN-SUFFIX,spotifycodes.com
   - DOMAIN-SUFFIX,spotifyforbrands.com
   - DOMAIN-SUFFIX,spotifyjobs.com
+  - DOMAIN-SUFFIX,spotifynewsroom.jp
+  - DOMAIN-SUFFIX,spotilocal.com
+  - DOMAIN-SUFFIX,tospotify.com
   - DOMAIN-KEYWORD,-spotify-com
   - DOMAIN-KEYWORD,spotify.com
   - IP-CIDR,35.186.224.47/32
@@ -5019,10 +5023,13 @@ payload:
   - DOMAIN-SUFFIX,ggpht.cn
   - DOMAIN-SUFFIX,ggpht.com
   - DOMAIN-SUFFIX,googlevideo.com
+  - DOMAIN-SUFFIX,gvt1.com
   - DOMAIN-SUFFIX,gvt2.com
+  - DOMAIN-SUFFIX,video.google.com
   - DOMAIN-SUFFIX,withyoutube.com
   - DOMAIN-SUFFIX,youtu.be
   - DOMAIN-SUFFIX,youtube-nocookie.com
+  - DOMAIN-SUFFIX,youtube-ui.l.google.com
   - DOMAIN-SUFFIX,youtube.ae
   - DOMAIN-SUFFIX,youtube.al
   - DOMAIN-SUFFIX,youtube.am
@@ -5118,6 +5125,7 @@ payload:
   - DOMAIN-SUFFIX,youtube.fi
   - DOMAIN-SUFFIX,youtube.fr
   - DOMAIN-SUFFIX,youtube.ge
+  - DOMAIN-SUFFIX,youtube.googleapis.com
   - DOMAIN-SUFFIX,youtube.gr
   - DOMAIN-SUFFIX,youtube.gt
   - DOMAIN-SUFFIX,youtube.hk
@@ -5175,6 +5183,7 @@ payload:
   - DOMAIN-SUFFIX,youtube.uy
   - DOMAIN-SUFFIX,youtube.vn
   - DOMAIN-SUFFIX,youtubeeducation.com
+  - DOMAIN-SUFFIX,youtubeembeddedplayer.googleapis.com
   - DOMAIN-SUFFIX,youtubefanfest.com
   - DOMAIN-SUFFIX,youtubegaming.com
   - DOMAIN-SUFFIX,youtubego.co.id
