@@ -83,5 +83,5 @@ for rawresult in [rawAbemaTV, rawAll4, rawAmazon, rawAmazonPrimeVideo, rawApple,
     result.extend([item.rstrip() for item in rawresult.split('\n') if not (item.startswith('#') or item.startswith('payload:'))])
 result_text = '\n'.join(result)
 
-with open("./ProxyMedia.yaml", "w") as f:
+with open("./OverseaMedia.yaml", "w") as f:
     f.write("\n".join(result))
