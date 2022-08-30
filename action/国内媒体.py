@@ -40,7 +40,7 @@ raw坚果云 = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_
 raw简书 = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/JianShu/JianShu.yaml").text
 raw京东 = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/JingDong/JingDong.yaml").text
 raw快手 = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/KuaiShou/KuaiShou.yaml").text
-raw酷狗/酷我 = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/KugouKuwo/KugouKuwo.yaml").text
+raw酷狗酷我 = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/KugouKuwo/KugouKuwo.yaml").text
 rawOPPO = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OPPO/OPPO.yaml").text
 rawOnePlus = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OnePlus/OnePlus.yaml").text
 raw拼多多 = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Pinduoduo/Pinduoduo.yaml").text
@@ -62,7 +62,10 @@ raw迅雷 = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rul
 raw优酷 = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Youku/Youku.yaml").text
 raw知乎 = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Zhihu/Zhihu.yaml").text
 
-result = raw115.split("\n") + raw12306.split("\n") + raw360.split("\n") + raw58同城.split("\n") + rawAcFun.split("\n") + raw支付宝.split("\n") + raw阿里巴巴.split("\n") + raw百度.split("\n") + raw百度贴吧.split("\n") + rawBiliBili.split("\n") + rawCCTV.split("\n") + rawCSDN.split("\n") + raw城通网盘.split("\n") + rawChina.split("\n") + rawChinaIPs.split("\n") + rawChinaIPsBGP.split("\n") + raw国内网站合集.split("\n") + rawChinaMedia.split("\n") + raw中国移动.split("\n") + raw中国新闻网.split("\n") + raw中国电信.split("\n") + raw中国联通.split("\n") + raw当当.split("\n") + raw钉钉.split("\n") + raw豆瓣.split("\n") + raw抖音.split("\n") + raw斗鱼.split("\n") + raw飞猪.split("\n") + raw凤凰网.split("\n") + raw高德.split("\n") + rawGovernmentCN.split("\n") + raw盒马.split("\n") + raw虎牙.split("\n") + raw华为.split("\n") + raw虎扑.split("\n") + raw爱奇艺.split("\n") + raw坚果云.split("\n") + raw简书.split("\n") + raw京东.split("\n") + raw快手.split("\n") + raw酷狗/酷我.split("\n") + rawOPPO.split("\n") + rawOnePlus.split("\n") + raw拼多多.split("\n") + raw平安.split("\n") + raw新浪.split("\n") + raw搜狐.split("\n") + rawSteamCN.split("\n") + raw苏宁.split("\n") + raw腾讯.split("\n") + raw腾讯视频.split("\n") + raw中国银联.split("\n") + rawVivo.split("\n") + raw微信.split("\n") + raw微博.split("\n") + raw闲鱼.split("\n") + raw小红书.split("\n") + raw小米.split("\n") + raw迅雷.split("\n") + raw优酷.split("\n") + raw知乎.split("\n")
+result = ['payload:']
+for rawresult in [result = raw115, raw12306, raw360, raw58同城, rawAcFun, raw支付宝, raw阿里巴巴, raw百度, raw百度贴吧, rawBiliBili, rawCCTV, rawCSDN, raw城通网盘, rawChina, rawChinaIPs, rawChinaIPsBGP, raw国内网站合集, rawChinaMedia, raw中国移动, raw中国新闻网, raw中国电信, raw中国联通, raw当当, raw钉钉, raw豆瓣, raw抖音, raw斗鱼, raw飞猪, raw凤凰网, raw高德, rawGovernmentCN, raw盒马, raw虎牙, raw华为, raw虎扑, raw爱奇艺, raw坚果云, raw简书, raw京东, raw快手, raw酷狗酷我, rawOPPO, rawOnePlus, raw拼多多, raw平安, raw新浪, raw搜狐, rawSteamCN, raw苏宁, raw腾讯, raw腾讯视频, raw中国银联, rawVivo, raw微信, raw微博, raw闲鱼, raw小红书, raw小米, raw迅雷, raw优酷, raw知乎]:
+    result.extend([item.rstrip() for item in rawresult.split('\n') if not (item.startswith('#') or item.startswith('payload:'))])
+result_text = '\n'.join(result)
 
 with open("./国内媒体.yaml", "w") as f:
     f.write("\n".join(result))
