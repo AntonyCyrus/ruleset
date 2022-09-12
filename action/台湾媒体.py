@@ -5,6 +5,7 @@ rawCatchplayPlus = requests.get("https://raw.githubusercontent.com/HotKids/Rules
 rawFriDay = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/friDay/friDay.yaml").text
 rawHBOAsia = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBOAsia/HBOAsia.yaml").text
 rawHamiVideo = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HamiVideo/HamiVideo.yaml").text
+rawKKBOX = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/KKBOX/KKBOX.yaml").text
 rawKKTV = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/KKTV/KKTV.yaml").text
 rawLiTV = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/LiTV/LiTV.yaml").text
 rawLineTV = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/LineTV/LineTV.yaml").text
@@ -13,7 +14,7 @@ rawmyVideo = requests.get("https://raw.githubusercontent.com/HotKids/Rules/maste
 rawTaiWanGood = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TaiWanGood/TaiWanGood.yaml").text
 
 result = ['payload:']
-for rawresult in [rawBahamut, rawCatchplayPlus, rawFriDay, rawHBOAsia, rawHamiVideo, rawKKTV, rawLiTV, rawLineTV, rawMOMO購物網, rawmyVideo, rawTaiWanGood]:
+for rawresult in [rawBahamut, rawCatchplayPlus, rawFriDay, rawHBOAsia, rawHamiVideo, rawKKBOX, rawKKTV, rawLiTV, rawLineTV, rawMOMO購物網, rawmyVideo, rawTaiWanGood]:
     result.extend([item.rstrip() for item in rawresult.split('\n') if not (item.startswith('#') or item.startswith('payload:'))])
 result_text = '\n'.join(result)
 
