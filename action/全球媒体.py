@@ -7,8 +7,7 @@ rawBiliBiliIntl = requests.get("https://raw.githubusercontent.com/blackmatrix7/i
 raw币安交易所 = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Binance/Binance.yaml").text
 rawCableTV = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/CableTV/CableTV.yaml").text
 rawCIBN互联网电视 = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/CIBN/CIBN.yaml").text
-rawCloudflare = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Cloudflare/Cloudflare.yaml
-").text
+rawCloudflare = requests.get("https://raw.githubusercontent.com/AntonyCyrus/ios_rule_script/master/rule/Clash/Cloudflare/Cloudflare.yaml").text
 rawDAZN = requests.get("https://raw.githubusercontent.com/AntonyCyrus/ios_rule_script/master/rule/Clash/DAZN/DAZN.yaml").text
 rawDeezer = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Deezer/Deezer.yaml").text
 rawDiscoveryPlus = requests.get("https://raw.githubusercontent.com/AntonyCyrus/ios_rule_script/master/rule/Clash/DiscoveryPlus/DiscoveryPlus.yaml").textl
