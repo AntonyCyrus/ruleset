@@ -9,10 +9,10 @@ rawParavi = requests.get("https://raw.githubusercontent.com/HotKids/Rules/master
 rawPixiv = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Pixiv/Pixiv.yaml").text
 rawPixnet = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Pixnet/Pixnet.yaml").text
 rawTver = requests.get("https://raw.githubusercontent.com/HotKids/Rules/master/Clash/RuleSet/TVer.yaml").text
-rawU-NEXT = requests.get("https://raw.githubusercontent.com/HotKids/Rules/master/Clash/RuleSet/U-NEXT.yaml").text
+rawU—NEXT = requests.get("https://raw.githubusercontent.com/HotKids/Rules/master/Clash/RuleSet/U-NEXT.yaml").text
 
 result = ['payload:']
-for rawresult in [rawAbemaTV, rawHuluJP, rawNiconico, rawNikkei, rawNintendo, rawParavi, rawPixiv, rawPixnet, rawTver, rawU-NEXT]:
+for rawresult in [rawAbemaTV, rawHuluJP, rawNiconico, rawNikkei, rawNintendo, rawParavi, rawPixiv, rawPixnet, rawTver, rawU—NEXT]:
     result.extend([item.rstrip() for item in rawresult.split('\n') if not (item.startswith('#') or item.startswith('payload:'))])
 result_text = '\n'.join(result)
 
