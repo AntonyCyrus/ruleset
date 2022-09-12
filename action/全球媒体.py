@@ -17,7 +17,7 @@ rawDropbox = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_ru
 raweBay = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/eBay/eBay.yaml").text
 rawEmojipedia = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Emojipedia/Emojipedia.yaml").text
 rawFlipBoard = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/FlipBoard/FlipBoard.yaml").text
-rawFOX NOW = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/FOXNOW/FOXNOW.yaml").text
+rawFOX_NOW = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/FOXNOW/FOXNOW.yaml").text
 rawFOXPlus = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/FOXPlus/FOXPlus.yaml").text
 rawFox = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Fox/Fox.yaml").text
 rawGarena = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Garena/Garena.yaml").text
@@ -54,7 +54,7 @@ rawWikipedia = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_
 rawYandex = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Yandex/Yandex.yaml").text
 
 result = ['payload:']
-for rawresult in [rawApkpure, rawAFP, rawAmazon, rawBiliBiliIntl, raw币安交易所, rawCableTV, rawCIBN互联网电视, rawCloudflare, rawDAZN, rawDeezer, rawDiscoveryPlus, rawDisqus, rawDubox, rawDropbox, raweBay, rawEmojipedia, rawFlipBoard, rawFOX NOW, rawFOXPlus, rawFox, rawGitBook, rawGitHub, rawIMDB, rawiQIYIIntl, rawITV, rawImgur, rawLastFM, rawMEGA, rawMozilla, rawMUBI, rawNTPService, rawOvercast, rawParamountPlus, rawPikPak, rawProtonmail, rawQobuz, rawShopee, rawShopify, rawSpeedtest, rawSpotify, rawStarPlus, rawTIDAL, rawThomsonReuters, rawTikTok, rawTwitch, rawVOA, rawViuTV, rawWeTV, rawWikimedia, rawWikipedia, rawYandex]:
+for rawresult in [rawApkpure, rawAFP, rawAmazon, rawBiliBiliIntl, raw币安交易所, rawCableTV, rawCIBN互联网电视, rawCloudflare, rawDAZN, rawDeezer, rawDiscoveryPlus, rawDisqus, rawDubox, rawDropbox, raweBay, rawEmojipedia, rawFlipBoard, rawFOX_NOW, rawFOXPlus, rawFox, rawGitBook, rawGitHub, rawIMDB, rawiQIYIIntl, rawITV, rawImgur, rawLastFM, rawMEGA, rawMozilla, rawMUBI, rawNTPService, rawOvercast, rawParamountPlus, rawPikPak, rawProtonmail, rawQobuz, rawShopee, rawShopify, rawSpeedtest, rawSpotify, rawStarPlus, rawTIDAL, rawThomsonReuters, rawTikTok, rawTwitch, rawVOA, rawViuTV, rawWeTV, rawWikimedia, rawWikipedia, rawYandex]:
     result.extend([item.rstrip() for item in rawresult.split('\n') if not (item.startswith('#') or item.startswith('payload:'))])
 result_text = '\n'.join(result)
 
