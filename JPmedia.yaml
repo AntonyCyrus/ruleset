@@ -87,6 +87,7 @@ payload:
   - DOMAIN-SUFFIX,nintendo.co.uk
   - DOMAIN-SUFFIX,nintendo.co.za
   - DOMAIN-SUFFIX,nintendo.com
+  - DOMAIN-SUFFIX,nintendo.com.au
   - DOMAIN-SUFFIX,nintendo.com.hk
   - DOMAIN-SUFFIX,nintendo.com.pt
   - DOMAIN-SUFFIX,nintendo.de
@@ -96,6 +97,7 @@ payload:
   - DOMAIN-SUFFIX,nintendo.fi
   - DOMAIN-SUFFIX,nintendo.fr
   - DOMAIN-SUFFIX,nintendo.it
+  - DOMAIN-SUFFIX,nintendo.jp
   - DOMAIN-SUFFIX,nintendo.net
   - DOMAIN-SUFFIX,nintendo.nl
   - DOMAIN-SUFFIX,nintendo.no
@@ -115,6 +117,7 @@ payload:
   - DOMAIN-SUFFIX,nintendoswitch.com.cn
   - DOMAIN-SUFFIX,nintendoswitch.net
   - DOMAIN-SUFFIX,nintendoswitchtogether.com
+  - DOMAIN-SUFFIX,nintendowifi.net
   - DOMAIN-SUFFIX,nintendowii.com
   - DOMAIN-SUFFIX,personaltrainermath.com
   - DOMAIN-SUFFIX,playnintendo.com
@@ -173,7 +176,7 @@ payload:
   - IP-CIDR,34.160.0.0/12
   - IP-CIDR,34.64.0.0/12
   - IP-CIDR,35.176.0.0/12
-  - IP-CIDR,35.192.0.0/12
+  - IP-CIDR,35.192.0.0/11
   - IP-CIDR,35.224.0.0/12
 
   # > Paravi
